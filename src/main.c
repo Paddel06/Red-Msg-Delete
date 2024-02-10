@@ -51,6 +51,12 @@ int red_msg_inject(tai_module_info_t *info){
 	case 0x6CB01295: // SceShell 3.60 Devkit
 		taiInjectData(modid, 0, 0x146E9E, patch, 4);
 		break;
+	case 0x5549BF1F: // SceShell 3.65 retail
+		taiInjectData(modid, 0, 0x14F4BE, patch, 4);
+		break;
+	case 0x587F9CED: // SceShell 3.65 Testkit
+		taiInjectData(modid, 0, 0x1478F2, patch, 4);
+		break;
 	case 0xE6A02F2B: // SceShell 3.65 Devkit
 		taiInjectData(modid, 0, 0x146EF6, patch, 4);
 		break;
