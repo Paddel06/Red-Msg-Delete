@@ -84,6 +84,15 @@ int delete_red_msg_without_enso(tai_module_info_t *info){
 	case 0x6CB01295: // SceShell 3.60 Devkit
 		module_get_offset(modid, 1, 0x208F8, &shell_top_widget);
 		break;
+	case 0x0552F692: // SceShell 3.65 retail
+		module_get_offset(modid, 1, 0x21BB0, &shell_top_widget);
+		break;
+	case 0xEAB89D5C: // SceShell 3.65 Testkit
+		module_get_offset(modid, 1, 0x20928, &shell_top_widget);
+		break;
+	case 0x6CB01295: // SceShell 3.65 Devkit
+		module_get_offset(modid, 1, 0x20908, &shell_top_widget);
+		break;
 	default:
 		return -1;
 	}
